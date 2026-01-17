@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission | BSMR Group</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BSMR <span>GROUP</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="vision.html" class="active">Vision</a>
+                <a href="businesses.html">Businesses</a>
+                <a href="strategy.html">Strategy</a>
+                <a href="sustainability.html">Sustainability</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; border: none; font-size: 0.8rem;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 60vh;">
+        <canvas id="liveBackground"></canvas>
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="container hero-content">
+            <span class="subtitle text-gold">OUR NORTH STAR</span>
+            <h1>Driven by Purpose</h1>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; gap: 6rem;">
+                <!-- Vision -->
+                <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+                    <span class="subtitle" style="display: block; margin-bottom: 1.5rem;">OUR VISION</span>
+                    <h2 style="font-size: 2.5rem; line-height: 1.4; color: #fff;">
+                        "To become a globally respected business group that improves the quality of life through
+                        innovation, sustainability, and responsible growth."
+                    </h2>
+                </div>
+
+                <!-- Mission -->
+                <div style="background: var(--secondary-bg); padding: 4rem; border-radius: 4px;">
+                    <span class="subtitle" style="display: block; margin-bottom: 2rem;">OUR MISSION</span>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 2rem; display: flex; gap: 1rem;">
+                                <span style="color: var(--accent-gold); font-size: 1.5rem;">01.</span>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Build World-Class Companies</h4>
+                                    <p style="color: var(--text-secondary);">Establish industry leaders across critical
+                                        sectors including finance, energy, and technology.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 2rem; display: flex; gap: 1rem;">
+                                <span style="color: var(--accent-gold); font-size: 1.5rem;">02.</span>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Create Long-term Value</h4>
+                                    <p style="color: var(--text-secondary);">Focus on sustainable profitability for our
+                                        stakeholders, shareholders, and partners.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 2rem; display: flex; gap: 1rem;">
+                                <span style="color: var(--accent-gold); font-size: 1.5rem;">03.</span>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Promote Social Progress</h4>
+                                    <p style="color: var(--text-secondary);">Actively invest in education, healthcare,
+                                        and clean energy to uplift communities.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 2rem; display: flex; gap: 1rem;">
+                                <span style="color: var(--accent-gold); font-size: 1.5rem;">04.</span>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Operational Ethics</h4>
+                                    <p style="color: var(--text-secondary);">Operate with absolute transparency,
+                                        integrity, and strict corporate governance.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 BSMR Group of Companies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

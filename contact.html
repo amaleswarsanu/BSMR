@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BSMR Group</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info-item {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-item h4 {
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-item p {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BSMR <span>GROUP</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="vision.html">Vision</a>
+                <a href="businesses.html">Businesses</a>
+                <a href="strategy.html">Strategy</a>
+                <a href="sustainability.html">Sustainability</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html" class="active btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; border: none; font-size: 0.8rem;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 60vh;">
+        <canvas id="liveBackground"></canvas>
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="container hero-content">
+            <span class="subtitle text-gold">GET IN TOUCH</span>
+            <h1>Global Presence,<br>Local Focus</h1>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- Contact Info -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Head Office</h2>
+
+                    <div class="contact-info-item">
+                        <h4>Address</h4>
+                        <p>BSMR Tower, Global Financial District<br>New York, NY 10005, USA</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>General Inquiries</h4>
+                        <p>info@bsmrgroup.com</p>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>Investor Relations</h4>
+                        <p>investors@bsmrgroup.com</p>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <h4 style="margin-bottom: 1rem;">Global Hubs</h4>
+                        <p style="color: var(--text-secondary);">London • Dubai • Singapore • Tokyo</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div style="background: var(--secondary-bg); padding: 3rem;">
+                    <h3 style="margin-bottom: 2rem;">Send us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select class="form-control">
+                                <option>General Inquiry</option>
+                                <option>Partnership Proposal</option>
+                                <option>Media/Press</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 BSMR Group of Companies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
